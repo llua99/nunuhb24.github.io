@@ -1,0 +1,144 @@
+<!-- 24th Birthday Gift – Single Page Application -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Happy 24th Birthday – A special digital gift.">
+  <title>Happy 24th Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Konfetti Overlay -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- 1. Hero Section -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+      <h1>
+        <!-- TODO: PERSONALIZE -->
+        <span class="reveal-word">Happy</span>
+        <span class="reveal-word">24th</span>
+        <span class="reveal-word">Birthday</span>
+        <span class="reveal-word">[NAME]</span>
+      </h1>
+      <p class="date">
+        <!-- TODO: PERSONALIZE -->
+        15. August 2026
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Letter Section -->
+    <section class="letter-section reveal">
+      <div class="letter-container">
+        <div class="letter-text">
+          <!-- TODO: PERSONALIZE – Ersetze den Lorem-Ipsum-Text durch einen persönlichen Geburtstagsbrief -->
+          <p>Liebe Nunu,</p>
+          <p>Ich hoffe du hast den BESTEN Tag deines Lebens</p>
+          <p>Du bist so wundervoll</p>
+          <p style="text-align: right; font-family: var(--font-serif); font-size: 1.25rem; color: var(--accent-lavender); margin-top: 2rem;">— [DEIN NAME]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Timeline / Memory Lane -->
+    <section class="timeline-section">
+      <div class="section-header reveal">
+        <h2>24 Years of You</h2>
+        <p>Eine kleine Reise durch die Momente, die dich zu der wundervollen Person gemacht haben, die du heute bist.</p>
+      </div>
+      <div class="timeline">
+        <!-- TODO: PERSONALIZE – Meilensteine anpassen -->
+        <article class="timeline-item reveal">
+          <span class="timeline-icon">👶</span>
+          <h3>1999 – Das große Abenteuer beginnt</h3>
+          <p>Die Welt wurde ein kleines bisschen heller, als du ankamst.</p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-icon">🎒</span>
+          <h3>2005 – Erster Schultag</h3>
+          <p>Mutig, neugierig und mit einem Lächeln, das alles erobert.</p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-icon">✈️</span>
+          <h3>2018 – Neue Horizonte</h3>
+          <p>Reisen, Entdecken, Erwachsenwerden – und dabei nie die Freude verlieren.</p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-icon">🎓</span>
+          <h3>2022 – Ein Meilenstein</h3>
+          <p>Abschluss, Erfolg und der Beweis, dass harte Arbeit sich auszahlt.</p>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-icon">🌟</span>
+          <h3>2026 – 24 &amp; unaufhaltsam</h3>
+          <p>Das beste Kapitel steht noch aus. Auf alles, was kommt.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. Photo Wall (Gallery) -->
+    <section class="gallery-section">
+      <div class="section-header reveal">
+        <h2>Beautiful Moments</h2>
+        <p>Erinnerungen, die für immer bleiben.</p>
+      </div>
+      <div class="gallery-grid">
+        <!-- TODO: PERSONALIZE – Ersetze placehold.co-URLs durch echte Bilder in assets/images/ -->
+        <div class="gallery-item tall reveal">
+          <img src="https://placehold.co/400x600/2d1b4e/e0b0ff?text=Memory+1" alt="Memory 1" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://placehold.co/400x400/1a0b2e/ffd700?text=Memory+2" alt="Memory 2" loading="lazy">
+        </div>
+        <div class="gallery-item wide reveal">
+          <img src="https://placehold.co/800x400/2d1b4e/f3e5f5?text=Memory+3" alt="Memory 3" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://placehold.co/400x400/1a0b2e/e0b0ff?text=Memory+4" alt="Memory 4" loading="lazy">
+        </div>
+        <div class="gallery-item tall reveal">
+          <img src="https://placehold.co/400x600/2d1b4e/ffd700?text=Memory+5" alt="Memory 5" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://placehold.co/400x400/1a0b2e/f3e5f5?text=Memory+6" alt="Memory 6" loading="lazy">
+        </div>
+        <div class="gallery-item wide reveal">
+          <img src="https://placehold.co/800x400/2d1b4e/e0b0ff?text=Memory+7" alt="Memory 7" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://placehold.co/400x400/1a0b2e/ffd700?text=Memory+8" alt="Memory 8" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA / Make a Wish -->
+    <section class="cta-section reveal">
+      <h2>Make a Wish</h2>
+      <p style="color: var(--text-muted); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">Drücke den Button und lass die Magie los. Alles Gute für dein neues Lebensjahr.</p>
+      <button class="btn-wish" id="wishButton" type="button">
+        Make a Wish <span class="heart-icon">✨</span>
+      </button>
+    </section>
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="footer reveal">
+    <p>Made with <span class="heart">♥</span> for you</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
